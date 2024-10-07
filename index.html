@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="header-navbar">
+        <div class="hero-navbar">
+            <h2>Beautiful Girl</h2>
+        </div>
+    </nav>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="image/gambar1.jpg" alt="1">
+                <h1>Niken</h1>
+                <div class="details">
+                    <h2>Niken</h2>
+                    <p>nikenandalusi</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="image/gambar2.jpg" alt="2">
+                <h1>Niken</h1>
+                <div class="details">
+                    <h2>Niken</h2>
+                    <p>nikenandalusi</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="image/gambar3.jpg" alt="3">
+                <h1>Niken</h1>
+                <div class="details">
+                    <h2>Niken</h2>
+                    <p>nikenandalusi</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="image/gambar4.jpg" alt="4">
+                <h1>Deivann</h1>
+                <div class="details">
+                    <h2>Kwaci</h2>
+                    <p>deivaann</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="image/gambar5.jpg" alt="5">
+                <h1>Deivann</h1>
+                <div class="details">
+                    <h2>Kwaci</h2>
+                    <p>deivaann</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="image/gambar6.jpg" alt="6">
+                <h1>Zee</h1>
+                <div class="details">
+                    <h2>Zee</h2>
+                    <p>zeeasadel</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="image/gambar7.jpg" alt="7">
+                <h1>Zee</h1>
+                <div class="details">
+                    <h2>Zee</h2>
+                    <p>zeeasadel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="js/jQuery.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function (){
+        $(".slider-img").removeClass("active");
+        $(this).addClass("active");
+        })
+    });
+</script>
 </body>
 </html>
